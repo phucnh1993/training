@@ -18,3 +18,4 @@
 | 12          | VMWare, Virtual Box, Hyper-X, ...             | Là phần mềm ảo hóa, giúp giả lập máy tính cá nhân và server.                          |
 | 13          | SQL Server, MySQL, MariaDB, PostgreSQL, ...   | Là phần mềm cơ sở dữ liệu, là lập trình viên thì cài.                                 |
 | 14          | Telnet, Remote Desktop, ...                   | Là phần mềm hổ trợ kết nối hay kiềm tra kết nối mạng.                                 |
+| 15          | Postman                                       | Là phần mềm hổ trợ test API.                                                          |

@@ -6,8 +6,11 @@
 - Lưu ý khi sửu dụng máy ảo là phân phối tài nguyên hợp lý vì khi một máy ảo muốn thay đổi tài nguyên thì phải tắt đi mở lại có thể gây ảnh hưởng hệ thống.
 - Máy ảo sẽ chậm hơn máy thật nhưng sẽ dễ backup và restore hơn máy thật.
 
-## INSTALL HYPER-X - Cài đặt máy ảo Hyper-X
-- Máy ảo Hyper-X là máy ảo của riêng hệ điều hành Window.
+## PREPARE - Chuẩn bị
+- Tải file ISO của hệ điều hành muốn cài.
+
+## HYPER-V - Máy ảo Hyper-V
+- Máy ảo Hyper-V là máy ảo của riêng hệ điều hành Window.
 - Do tích hợp cùng Window nên có lợi thế hơn các loại máy ảo khác do share tài nguyên dễ hơn, có thể setup khởi động cùng hệ thống và chạy tốn ít tài nguyên hơn.
 - Phù hợp cho sử dụng ảo hóa cho máy ảo là Window, Window Server. Đối với Linux thì nên xài dạng Command Line còn xài giao diện sẽ lag hơn.
 - Dễ cài đặt nhưng hay lỗi vặt.
@@ -15,25 +18,33 @@
 - Hổ trợ khởi động chạy ngầm cùng hệ thống.
 - Thích hợp cho máy cấu hình yếu.
 
-### PREPARE - Chuẩn bị
-- Tải file ISO của hệ điều hành muốn cài.
+### INSTALL HYPER-V - Cài đặt Hyper-V
 - Vào "Control Panel" để install máy ảo trong "Programs and Features".
 ![Select page](https://github.com/phucnh1993/training/blob/master/vi/software/install-virtual-machine/image/control-panel.jpg?raw=true)
 - Chọn "Turn Windows features on or off".
 ![Select page](https://github.com/phucnh1993/training/blob/master/vi/software/install-virtual-machine/image/programs-and-features.jpg?raw=true)
 - Click chọn Hype-V để cài đặt vào hệ thống sau đó thì restart máy tính.
 ![Select page](https://github.com/phucnh1993/training/blob/master/vi/software/install-virtual-machine/image/install-hyper-v.jpg?raw=true)
+- Sau khi cài xong thì nhấn vào Start menu => Search từ khóa Hyper-V.
+![Select page](https://github.com/phucnh1993/training/blob/master/vi/software/install-virtual-machine/image/hyper-v-manager.jpg?raw=true)
+- Nếu xuất hiện thì cài Hyper-V thành công.
 
-## INSTALL VIRTUAL BOX - Cài đặt máy ảo Virtual Box
+### USE HYPER-V - Sử dụng Hyper-V
+- Sau khi mở ứng dụng Hyper-V manager lên.
+
+
+## VIRTUAL BOX - Máy ảo Virtual Box
 - Máy ảo Virtual Box là phần mềm điều khiển máy ảo miễn phí.
 - Tương đối ổ định nhưng hiệu năng chỉ tương đương Hype-X.
-- Hổ trợ backup, clone máy ảo tốt hơn Hyper-X. Nhưng bị giới hạn số lượng clone.
+- Hổ trợ backup, clone máy ảo tốt hơn Hyper-V. Nhưng bị giới hạn số lượng clone.
 - Cũng có hệ thống card mạng tương đối.
 - Đồ họa thì giật lag hơn Hype-X.
 - Không hổ trợ khởi động chạy ngầm cùng hệ thống.
 - Thích hợp cho máy cấu hình yếu.
 
-## INSTALL VMWARE PRO - Cài đặt máy ảo VmWare
+### INSTALL VIRTUAL BOX - Cài đặt Virtual Box
+
+## VMWARE PRO - Máy ảo VmWare
 - Máy ảo VmWare là phần mềm điều khiển máy ảo có trả phí.
 - Tối ưu hệ thống sử dụng card đồ họa nên chỉ cần cài driver VmWare vào sẽ không bị giật lag.
 - Quản lý hệ thống card mạng tốt.
