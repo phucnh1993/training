@@ -15,9 +15,9 @@
 | 8      | short, Int16     | 2 bytes    | Dùng cho số nguyên từ $-32,768$ đến 32,767                                              |         |
 | 9      | byte, UInt8      | 1 byte     | Dùng cho số nguyên từ 0 đến 255                                                         | x       |
 | 10     | sbyte, Int8      | 1 byte     | Dùng cho số nguyên từ $-128$ đến 127                                                    |         |
-| 11     | float            | 4 bytes    | Kiểu số thực từ $(±1.5) x 10^(-45)$ to $(±3.4) x 10^(384)$ (6-9 chữ số sau dấu ',')     |         |
-| 12     | double           | 8 bytes    | Kiểu số thực từ $(±5.0) x 10^(-324)$ to $(±1.7) x 10^(308)$ (15-17 chữ số sau dấu ',')  | x       |
-| 13     | decimal          | 16 bytes   | Kiểu số thực từ $(±1.0) x 10^(-28)$ to $(±7.9228) x 10^(28)$ (28-29 chữ số sau dấu ',') | x       |
+| 11     | float            | 4 bytes    | Kiểu số thực từ $±1.5 * 10^{-45}$ to $±3.4 * 10^{384}$ (6-9 chữ số sau dấu ',')         |         |
+| 12     | double           | 8 bytes    | Kiểu số thực từ $±5.0 * 10^{-324}$ to $±1.7 * 10^{08}$(15-17 chữ số sau dấu ',')        | x       |
+| 13     | decimal          | 16 bytes   | Kiểu số thực từ $±1.0 * 10^{-28}$ to $±7.9228 * 10^{28}$ (28-29 chữ số sau dấu ',')     | x       |
 | 14     | bool             | 1 bit      | Kiểu đúng/sai, có/không hay bật/tắt                                                     | x       |
 | 15     | char             | 16 bit     | Dùng cho ký tự hoặc những bài toán liên quan đến bit, AND, OR                           |         |
 | 16     | enum             | N/A        | Dùng khai báo 1 tập hợp tên được nối với 1 số xác định và không đổi                     | x       |
