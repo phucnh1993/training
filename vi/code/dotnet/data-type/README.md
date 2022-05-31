@@ -5,9 +5,9 @@
 - Có các loại dữ liệu căn bản sau :
 | Thứ tự | Tên loại dữ liệu | Dung lượng | Mô tả                                                                                   |
 | :---:  | :---             | :---       | :---                                                                                    |
+#
 | 1      | nuint            | 4-8 bytes  | Dùng thay cho ulong và uint                                                             |
 | 2      | nint             | 4-8 bytes  | Dùng thay cho long và int                                                               |
-#
 | 3      | ulong, UInt64    | 8 bytes    | Dùng cho số nguyên bắt đầu từ số 0 và giới hạn là 18 tỷ tỷ                              |
 | 4      | long, Int64      | 8 bytes    | Dùng cho số nguyên bắt đầu từ âm 9 tỷ tỷ đến dương 9 tỷ tỷ                              |
 | 5      | uint, UInt32     | 4 bytes    | Dùng cho số nguyên bắt đầu từ số 0 và giới hạn là 4 tỷ                                  |
