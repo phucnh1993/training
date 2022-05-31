@@ -12,3 +12,4 @@
 
 ## MENU
 1. DATATYPE : Là khái niệm về loại dữ liệu của DOTNET.
+2. FUNCTION : Là khái niệm về một hàm hay phương thức thực hiện hành động để sử dụng hoặc xử lý dữ liệu - data.
