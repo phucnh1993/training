@@ -30,7 +30,7 @@
 | 23     | dynamic, object  | N/A        | Dủng khai báo 1 biến mà không biết kiểu dữ liệu                              | x       |
 | 24     | void             | N/A        | Dùng khai báo 1 hàm hay method không trả kết quả                             | x       |
 | 25     | T                | N/A        | Dùng trong trường hợp đặc biệt sẽ được mô tả riêng                           |         |
-| 26     | [], Array        | N/A        | Dùng cho tập hợp 1 kiểu dữ liệu lại thành 1 mảng                             | x       |
+| 26     | \[\], Array      | N/A        | Dùng cho tập hợp 1 kiểu dữ liệu lại thành 1 mảng                             | x       |
 | 27     | List, IEnumable  | N/A        | Dùng cho tập hợp 1 kiểu dữ liệu lại thành 1 dãy có thứ tự                    | x       |
 | 28     | Guid             | 32 bytes   | Dùng cho 1 đối tượng là 1 dãy ký tự đặt biệt                                 |         |
 | 29     | Datetime         | 8 bytes    | Dùng cho lưu trữ ngày tháng và giờ chính xác đến nano second                 | x       |
