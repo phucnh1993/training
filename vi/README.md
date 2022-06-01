@@ -6,3 +6,6 @@
 
 ## SOFTWARE
 - Thư mục chứa nội dung về phần mềm máy tính.
+
+## CODE
+- Thư mục chứa nội dung về việc viết chương trình cho máy tính.
