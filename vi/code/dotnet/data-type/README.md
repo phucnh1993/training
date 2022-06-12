@@ -46,3 +46,9 @@
 - Nếu được nên hạn chế dùng dynamic và object vì chúng khá rắc rối trong việc xác định loại dữ liệu và thay đổi hay đọc chúng.
 - Nếu đã dùng kiểu dữ liệu bool thì đừng nên dùng thêm kiểu null nữa.
 - Khuyến khích dùng class thay cho struct vì sau này muốn mở rộng thêm phương thức - method sẽ dễ hơn.
+- Có 5 dạng data type chính thường thấy là: number, string, array, object, null.
+    1. number : thường là data type dùng lưu số, sẽ fix dung lượng byte và dễ sử dụng, mục đích phục vụ việc tính toán và giới hạn dung lượng.
+    2. string : là data type dùng để lưu các đoạn text, dung lượng không cố định và có tính chất tương tự như 1 array, quan trọng là ký tự được mã hóa theo loại mã nào (UTF8, UTF16, ASCII, Unicode, ...).
+    3. array : là data type dạng chuỗi hay còn gọi là 1 mảng. Dùng lưu trữ 1 dãy đối tượng có cùng kiểu dữ liệu. Quan trọng là những hàm phục vụ mục đích như tìm kiếm, thay thế, thêm, chèn, xóa, kiểm tra tồn tại, đếm, ... 1 đối tượng. Dung lượng có thể xác định.
+    4. object : là data type được định nghĩa từ 1 đối tượng, hàm ý rằng đây là 1 loại data type có rất nhiều thuộc tính, dung lượng không xác định. Bất kỳ đối tượng khai báo dạng class hay struct đều có thể làm data type.
+    5. null : là data type cho phép thêm loại giá là null vào trong 1 trường của đối tượng hay gán chính đối tượng đó bằng null. Là loại data type khó chịu nhất vì khi sử dụng chúng ta sẽ tốn thêm 1 câu lệnh if để check giá trị null. Ngoài ra data type này dùng để hàm ý là đối tượng hoặc trường giá trị của đối tượng đó là không xác định hoặc tại thời điểm sử dụng chúng vẫn chưa được khởi tạo hay gán giá trị.

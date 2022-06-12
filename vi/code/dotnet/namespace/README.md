@@ -1,0 +1,12 @@
+# NAMESPACE - Không gian tên
+- Là một tập hợp những Đối tượng và Phương thức xử lý của 1 đoạn mã, thư viện hay chương trình.
+- Không gian tên thường được đặt tên theo rule <namespace_parent>.....<namespace_child>{<namespace_body>}.
+- namespace_parent : Không gian tên cha, một đoạn code hay đối tượng của không gian tên cha có thể xử dụng cho không gian tên con nhưng phải Using không gian tên cha vào không gian tên con.
+- namespace_child : Không gian tên con, một đoạn code hay đối tượng của không gian tên con có thể xử dụng cho không gian tên cha nhưng phải Using không gian tên con vào không gian tên cha.
+- namespace_body : Phần thân của không gian tên là nơi chứa những đoạn mã chương trình.
+- Không gian tên khi using ở đoạn tên nào thì sẽ sử dụng được code được khai báo ở đoạn tên đó và không gian tên thường được đặt theo tên thư mục chứa code và ngăn cách nhau bở dấu chấm.
+- Không gian tên được khai báo để sử dụng bằng câu lệnh Using <namespace>.
+- Nên hạn chế Using quá nhiều không gian tên vì nếu khai báo mà không sử dụng sẽ làm chậm chương trình khi build và khi chạy (Do chương trình phải đi check rồi lấy code trong không gian tên vào đoạn mã nhưng nó lại không sử dụng gây lãng phí thời gian check và lấy code).
+- Mỗi 1 file cs chỉ khai báo 1 namespace, không nên khai báo quá nhiều namespace trong 1 file cs. Và nhiều file cs có thể có cùng namespace.
+- Tên của namespace nên là danh từ, nếu là hành động thì nên chuyển sang dạng danh từ của hành động đó.
+- Một số tên namespace phổ biến: MSV (Micro Service), Helper - Common (Chứa các function hay model phổ biến dùng chung), Core (Giống helper nhưng sẽ chứa những đoạn code có tính không đổi), Entity - Entities (Chứa những thực thể sẽ map với table trong database), Model - Models - Dto - Dtos (Chứa những đối tượng chứa data), Extention - Extentions - Extension - Extensions (Chứa những function dùng chung dạng khuôn mẫu), Service - Services - Module - Moduler - Modules - Modulers (Chứa những đối tượng hay function là các dịch vụ xử lý data là chính), Controller (Chứa những khai báo API hay service của lập trình Web, MVC), View - Views (Chứa những giao diện hay web page), Config - Configs - Configuration - Configurations (Chứa những cấu hình khi xử dụng thư viện), Util - Utils (Gom nhóm những namespace như model, extention, ...) còn những cách đặt tên khác sẽ tùy biến vào cấu trúc và ngữ cảnh.
