@@ -3,9 +3,7 @@
 ## Lab 1 - Đăng nhập vào giao diện dòng lệnh của router
 
 ### Sơ đồ
-<div align="center">
-    ![Select page](https://github.com/phucnh1993/training/blob/master/vi/ccna/network-basic/image/lab-1-diagram.jpg?raw=true)
-</div>
+![Select page](https://github.com/phucnh1993/training/blob/master/vi/ccna/network-basic/image/lab-1-diagram.jpg?raw=true)
 <div align="center">
     Hình 1 - Sơ đồ bài lab.
 </div>
@@ -18,13 +16,13 @@
 ### Thực hiện
 - **Bước 1: Kết nối thiết bị**
 Chúng ta thực hiện kết nối PC đến thiết bị bằng cáp console như hình vẽ 1.
+
 - **Bước 2: Cài đặt chương trình giao tiếp với router**
 Chúng ta sử dụng phần mềm PuTTY để truy cập thiết bị. Phần mềm có thể tãi miễn phí từ trang web [Link download](https://www.putty.org).
 PuTTY không cần cài đặt và có thể chạy trực tiếp từ máy tính.
-<div align="center">
-    ![Select page](https://github.com/phucnh1993/training/blob/master/vi/ccna/network-basic/image/putty-start.jpg?raw=true)
-</div>
+![Select page](https://github.com/phucnh1993/training/blob/master/vi/ccna/network-basic/image/putty-start.jpg?raw=true)
 <div align="center">
     Hình 2 - Giao diện chương trình PuTTY.
 </div>
+
 - **Bước 3: Xác định cổng COM được sử dụng trên PC**
