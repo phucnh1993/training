@@ -1,6 +1,6 @@
 # CODE - Viết phần mềm
 - Viết phần mềm là viết một ứng dụng sử dụng cho một hệ điều hành.
-- Do Admin code chủ yếu là .NET nên sẽ ưu tiên viết về nội dung này.
+- Do mình code chủ yếu là .NET nên sẽ ưu tiên viết về nội dung này.
 
 ## .NET
 - Phần mềm tạo nên chương trình có thể chạy trên nhiều nền tảng hệ điều hành như Window, Linux, ...

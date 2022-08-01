@@ -2,6 +2,27 @@
 - Loại dữ liệu là đơn vị cơ sở để xây dựng nên một chương trình.
 - Loại dữ liệu là nơi định nghĩa dung lượng mà chương trình có thể sử dụng phần cứng máy tính, đặc biệt là RAM.
 - Admin giới thiệu trước loại dữ liệu trước vì nếu không hiểu hay lạm dụng loại dữ liệu sẽ dấn đến chương trình ngốn nhiều RAM -> Gây lãn phí RAM, lãn phí CPU khi tính toán giá trị trên RAM (Thay vì chỉ cần 1 phần CPU nhỏ và 1 phần RAM nhỏ để tính toán 1 bài toán đơn giản không có số thực nhưng lại khai báo số thực làm phải tốn thêm CPU để tính toán dấu phẩy của phần thực và tốn RAM để lưu trữ -> Tăng độ phức tạp của bài toán).
+
+## Sơ đồ tóm tắt loại dữ liệu
+![Picture_1](https://github.com/phucnh1993/training/blob/master/vi/code/dotnet/data-type/image/data-type-diagram.jpg?raw=true)
+<div align="center">
+    Hình 1 - Sơ đồ loại dữ liệu.
+</div>
+
+##### Nguyên lý hoạt động
+- Mọi kiểu dữ liệu đều xuất phát từ kiểu dữ liệu nguyên thủy là Object - Đối tượng.
+- Dựa vào đặc tính trạng thái của Object ta có 5 loại cơ bản là:
+  1. undefine : là object chưa được định nghĩa.
+  2. null : là object chưa được định nghĩa hoặc đã định nghĩa nhưng không có giá trị.
+  3. boolean : là object đã được định nghĩa chỉ chứa 1 trong 2 giá trị duy nhất có dạng là true/false.
+  4. number : là object đã được định nghĩa chứa 1 con số bất kỳ.
+  5. string : là object được định nghĩa chứa 1 chuỗi ký tự đại diện cho 1 text.
+- Trong kiều number thì ta có 2 loại chính là số thực và số nguyên.
+- Tại sao lại phải phân biệt? Vì ta muốn cùng 1 dữ liệu thì số thực sẽ phức tạp hơn số nguyên.
+- Tại sao phải phân biệt số âm hay không âm? Vì để biểu diễn 1 số âm hay không ta sẽ bị mất 1 bit để định nghĩa (làm mất 1 lượng lớn giá trị).
+
+## Những loại dữ liệu thường thấy trong DOTNET
+
 ##### Có các loại dữ liệu căn bản sau :
 | Tên loại dữ liệu | Dung lượng | Mô tả                                                                                   |
 | ---              | ---        | ---                                                                                     |
@@ -35,10 +56,15 @@
 | Guid             | 32 bytes   | Dùng cho 1 đối tượng là 1 dãy ký tự đặt biệt.                                           |
 | Datetime         | 8 bytes    | Dùng cho lưu trữ ngày tháng và giờ chính xác đến nano second.                           |
 
+##### Quá khó nhớ?
+- Nếu thấy quá khó nhớ thì ta nhớ căn bản như sau: kiểu số nguyên thì cứ dùng int và kiểu số thực dùng float. Sau này nếu cần loại dữ liệu đặc biệt hơn thì ta cập nhật thêm.
+- Hạn chế dùng null trong DotNet vì nó sẽ làm phát sinh thêm 1 điều kiện để kiểm tra dữ liệu.
+- Khi ta khai báo 1 struct hay 1 class thì ta đã tạo thêm 1 data type.
+
 ##### Note
-- Với các biến kiểu số nguyên thường được dùng trong bài toán đơn giản như cộng trừ hoặc lưu lại các bước của 1 đối tượng.
-- Với các biến kiểu số thực thường được dùng trong bài toán nhân, chia vì sự phức tạp sau dấu phẩy và làm tròn giá trị.
-- Nếu dùng kiểu số thực thì nên dùng double hoặc decimal vì float dùng 4 bytes để lưu trữ nên đôi khi việc làm tròn sẽ là vấn đề đau đầu.
+- Với các biến kiểu **số nguyên** thường được dùng trong bài toán đơn giản như cộng trừ hoặc lưu lại các bước của 1 đối tượng.
+- Với các biến kiểu **số thực** thường được dùng trong bài toán nhân, chia vì sự phức tạp sau dấu phẩy và làm tròn giá trị.
+- Nếu dùng kiểu **số thực** thì nên dùng **double** hoặc **decimal** vì **float** dùng *4 bytes* để lưu trữ nên đôi khi việc làm tròn sẽ là vấn đề đau đầu.
 - Với biến kiểu T dùng để ám chỉ không xác định loại dữ liệu cho biến đó và nếu muốn xử dụng phải đổi về object hoặc dùng các phương thức refactor để xử lý. Thường dùng cho việc khai báo 1 đối tượng có thể xử lý cho nhiều loại dự liệu.
 - Tất cả các loại dữ liệu đều có thể quy đổi về loại dữ liệu object vì .NET là 1 ngôn ngữ lập trình OOP - Lập trình hướng đối tượng.
 - Hạn chế dùng kiểu dữ liệu null vì sẽ tốn thêm dòng code if else để xử lý -> làm tăng độ phức tạp của chương trình hay hàm.
