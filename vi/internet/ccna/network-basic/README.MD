@@ -15,3 +15,7 @@
 ## Lab 4 - Khôi phục mật khẩu cho router
 - Khôi phục mật khẩu cho router thông qua cổng console.
 - Tìm hiểu boot rommon.
+
+## Lab 5 - Sao lưu và nâng cấp IOS cho router
+- Sao lưu IOS của router.
+- Nâng cấp hoặc ghi đè IOS của router.
